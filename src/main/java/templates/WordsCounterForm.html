@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>My Form</title>
+</head>
+<body>
+    <h1>Submit a Form</h1>
+    <form action="#" th:action="@{/count}" method="post">
+        <label for="textInputField">Text Input:</label><br>
+        <textarea id="textInputField" name="text"></textarea><br>
+        <button type="submit">Submit</button>
+    </form> 
+    
+    <p>Count is: <span th:text="${count}" >1</span> </p>
+</body>
+</html>
