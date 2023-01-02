@@ -15,6 +15,11 @@ public class WordsCountController {
     this.counter = counter;
   }
 
+  @GetMapping("/")
+  public String home() {
+    return "Index";
+  }
+
   @GetMapping("/count")
   public String showForm() {
     return "WordsCounterForm";
